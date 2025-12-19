@@ -29,3 +29,13 @@ Notes:
 
 Contributing:
 Replace placeholder car and track with real assets (GLTF) and implement full physics for more realistic handling.
+
+Tuning:
+- The car handling parameters were tuned for a more arcade-y, responsive feel. Edit `src/main.js` to change:
+	- `state.maxSpeed` (km/h) — top speed
+	- `state.accel` (km/h per second) — acceleration
+	- `state.brake` — braking strength
+	- `state.maxSteer` — maximum steering angle
+	- `state.steeringSpeed` — how quickly the steering reaches the angle
+
+These were increased from conservative defaults to make the car faster and turn more sharply.
